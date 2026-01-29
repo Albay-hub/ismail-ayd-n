@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsmail Aydın | Dijital Kartvizit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --altin: #d4af37; }
+        body {
+            margin: 0; padding: 0;
+            background: linear-gradient(135deg, #0f0f0f 0%, #2c3e50 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh; color: white; text-align: center;
+        }
+        .kart {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 40px 20px; border-radius: 25px;
+            backdrop-filter: blur(15px); width: 320px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .profil-resmi {
+            width: 140px; height: 140px; border-radius: 50%;
+            border: 3px solid var(--altin); margin-bottom: 20px;
+            object-fit: cover; box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        h1 { margin: 10px 0; font-size: 26px; color: var(--altin); letter-spacing: 2px; }
+        .hikmetli-soz { margin: 25px 0; border-top: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding: 15px 0; }
+        .osmanlica { font-size: 18px; display: block; color: var(--altin); margin-bottom: 5px; }
+        .meal { font-size: 13px; color: #bbb; font-style: italic; display: block; }
+        .iletisim { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; }
+        .link { text-decoration: none; color: #ddd; font-size: 14px; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.3s; }
+        .link:hover { color: var(--altin); }
+        .fixed-social-box { position: fixed; right: 20px; bottom: 20px; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+        .btn-social { height: 55px; width: 55px; border-radius: 30px; display: flex; align-items: center; text-decoration: none; color: white; transition: width 0.5s ease; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.4); }
+        .btn-social:hover { width: 180px; }
+        .btn-social i { min-width: 55px; text-align: center; font-size: 22px; }
+        .btn-text { opacity: 0; transition: 0.3s; white-space: nowrap; font-weight: bold; }
+        .btn-social:hover .btn-text { opacity: 1; }
+        .insta { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+        .ytube { background-color: #FF0000; }
+    </style>
+</head>
+<body>
+
+    <div class="kart">
+        <img src="profil.jpg" alt="İsmail Aydın" class="profil-resmi">
+        
+        <h1>İsmail Aydın</h1>
+
+        <div class="hikmetli-soz">
+            <span class="osmanlica">"Edeb bir tâc imiş nûr-ı Hudâ’dan"</span>
+            <span class="meal">Edep, Allah'ın nurundan bir taçtır...</span>
+            <span class="osmanlica">"Giy o tâcı emîn ol her belâdan."</span>
+            <span class="meal">O tacı giy ki her beladan emin olasın.</span>
+        </div>
+
+        <div class="iletisim">
+            <a href="mailto:ismailaydin@gmail.com" class="link"><i class="fas fa-envelope"></i> ismailaydin@gmail.com</a>
+            <a href="tel:+905616150020" class="link"><i class="fas fa-phone"></i> +90 561 615 00 20</a>
+        </div>
+    </div>
+
+    <div class="fixed-social-box">
+        <a href="https://www.instagram.com/bilinmeyenboyut" class="btn-social insta" target="_blank"><i class="fab fa-instagram"></i><span class="btn-text">İsmail Aydın</span></a>
+        <a href="https://youtube.com/@bilinmeyenboyut" class="btn-social ytube" target="_blank"><i class="fab fa-youtube"></i><span class="btn-text">İsmail Aydın</span></a>
+    </div>
+
+</body>
+</html>
